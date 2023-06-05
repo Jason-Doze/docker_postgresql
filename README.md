@@ -13,6 +13,7 @@ This repository provides a collection of scripts to assist with setting up and d
 ## Prerequisites
 Raspberry Pi 400 running Ubuntu server.
 SSH access to Raspberry Pi.
+The hostname of your Raspberry Pi set to `pi`.
 
 Set the PI_HOST variable to the IP address of your Raspberry Pi and run the pi_local.sh script:
 ```bash
@@ -23,7 +24,7 @@ This will connect to the Raspberry Pi, synchronize files, install Docker, and de
 ## Connect a Database
 To connect a database to your Hasura instance, follow these steps:
 
-1. Open the Hasura Console by navigating to http://localhost:8080/console.
+1. Open the Hasura Console by navigating to http://pi:8080/console.
 
 ![dashboard](./images/1.png)
 

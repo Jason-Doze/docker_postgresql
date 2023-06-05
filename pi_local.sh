@@ -11,6 +11,9 @@ do
     then
       echo -e "\n\033[1;32m==== Server is running ====\033[0m\n"
       break
+    else
+      printf "\033[31m.\033[0m"
+      sleep 5
     fi
   else
     printf "\033[31m.\033[0m"
