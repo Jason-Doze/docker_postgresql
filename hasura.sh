@@ -12,10 +12,11 @@ else
 fi
 
 # Start Hasura GraphQL Engine and Postgres database in Docker containers
-if [ -f docker-compose.yml ]
+if [ "$(curl -s -o /dev/null -w "%{http_code}" http://pi:8080/console)" -eq 200 ] 
 then 
-  echo -e "\n\033[1;32m==== Starting Hasura GraphQL Engine and Postgres database  ====\033[0m\n"
-  sudo docker compose up -d
+  echo -e "\n\033[1;32m==== Hasura GraphQL Engine and Postgres database started ====\033[0m\n"
 else
-  echo -e "\n\033[1;33m==== docker-compose.yml not present ====\033[0m\n"
+  echo -e "\n\033[1;33m==== Starting Hasura GraphQL Engine and Postgres database ====\033[0m\n"
+  sudo docker compose up -d
 fi
+
