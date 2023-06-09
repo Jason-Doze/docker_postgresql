@@ -1,6 +1,6 @@
 # Docker Postgresql
 
-This repository provides a collection of scripts to assist with setting up and deploying a Docker environment on a Raspberry Pi 400 running Ubuntu server from MacOS. These scripts automate Docker installation, fetch and deploy a `docker-compose.yml` file to start Hasura GraphQL Engine and a Postgres database, and guide the user through connecting the database using the Hasura console.
+This repository provides a collection of scripts to set up and deploy a Docker environment on a Raspberry Pi 400 running Ubuntu server from MacOS. These scripts automate Docker installation, fetch and deploy a `docker-compose.yml` file to start Hasura GraphQL Engine and a Postgres database, and guide the user through connecting the database using the Hasura console.
 
 ## Structure
 
